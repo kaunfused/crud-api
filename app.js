@@ -8,7 +8,7 @@ const port = 3000;
 
 const router = require("./routes/tasks");
 
-// app.use(express.static("public"));
+app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
